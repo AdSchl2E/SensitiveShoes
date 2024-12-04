@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="logo.png">
+    <title>Sensitive Shoes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section id="navbar" class="navbar">
+        <div class="container">
+            <div class="logoContainer">
+                <img src="logo.png">
+            </div>
+            <div class="linkContainer">
+                <p><a href="#home">Home</a></p>
+                <p><a href="#ourTech">Our technologie</a></p>
+                <p><a href="#ourProd">Our products</a></p>
+                <p><a href="#contacts">Contacts</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="home" class="home">
+        <img class="background" src="Background2.jpg">
+        <div class="container">
+            <img class="logoBig" src="logo.png">
+            <h1 class="title">Sensitive Shoes</h1>
+            <p class="slogan">Walk where ever you want.</p>
+            <a class="button" href="#ourTech">See more</a>
+        </div>
+    </section>
+    <section id="ourTech" class="ourTech">
+        <div class="container">
+            <h1 class="title">Our technologie</h1>
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus veniam enim accusantium ipsam corrupti asperiores nesciunt fugiat magnam quidem aliquam, cumque, laborum quo nisi itaque autem dolorem! Rem, dolor assumenda.</p>
+            <div class="cardContainer">
+                <div class="card">
+                    <img class="techImg background">
+                    <p class="techText">Vibration system</p>
+                </div>
+                <div class="card">
+                    <img class="techImg background">
+                    <p class="techText">Design</p>
+                </div>
+                <div class="card">
+                    <img class="techImg background" src="Leisure.jfif">
+                    <p class="techText">Leisure</p>
+                </div>
+                <div class="card">
+                    <img class="techImg background" src="Recyclable.jpg">
+                    <p class="techText">Recyclable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ourProd" class="ourProd">
+        <img class="background" src="Background4.jpg">
+        <div class="container">
+            <h1 class="title">Our products</h1>
+            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus veniam enim accusantium ipsam corrupti asperiores nesciunt fugiat magnam quidem aliquam, cumque, laborum quo nisi itaque autem dolorem! Rem, dolor assumenda.</p>
+            <div class="cardContainer">
+                <div class="card">
+                    <img class="prodImg" src="Shoes1.jpg">
+                    <p class="prodText">GS 2K20</p>
+                    <p class="prodPrice">$140</p>
+                </div>
+                <div class="card">
+                    <img class="prodImg" src="Shoes2.jpg">
+                    <p class="prodText">GS 2K21</p>
+                    <p class="prodPrice">$140</p>
+                </div>
+                <div class="card">
+                    <img class="prodImg" src="Shoes3.jpg">
+                    <p class="prodText">GS 2K22</p>
+                    <p class="prodPrice">$?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="SSContacts">
+                <h3 class="title">Sensitive Shoes:</h3>            
+                <p class="contactsText">Mail : sensitive.shoes@gmail.com</p>
+                <p class="contactsText">Tel : +33777046710</p>
+                <p class="contactsText">Facebook : Sensitive Shoes</p>
+                <p class="contactsText">Twitter : Sensitive_Shoes</p>
+                <p class="contactsText">Instagram : Sensitive_Shoes</p>
+            </div>
+            <div class="asicsContacts">
+                <h3 class="title">Asics:</h3>  
+                <p class="contactsText">Mail : consommateur-fr@asics.com</p>
+                <p class="contactsText">Tel : +33411950679</p>
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="footer">
+        <div class="container">
+            <p>Copyrigth 2021 <b>Sensitive Shoes</b>. All right reserved.</p>
+        </div>
+    </section>
+    <script>
+        window.onscroll = function(){
+            var navbar = document.getElementById("navbar")
+            if (window.pageYOffset >= 720){
+                navbar.classList.add("fixed");
+                navbar.classList.remove("notfixed");
+            } else {
+                navbar.classList.remove("fixed");
+                navbar.classList.add("notfixed");
+            }
+        }
+    </script>
+</body>

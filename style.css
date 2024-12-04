@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+    z-index: 1;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #000000;
+    z-index: 0;
+}
+a{
+    color: #ffffff;
+}
+.fixed{
+    position: fixed !important;
+    box-shadow:0px 0px 10px rgba(140,140,140,0.15);
+    background-color: #ffffff;
+}
+.notfixed{
+    box-shadow: none !important;
+}
+
+#navbar{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+#navbar .container{
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    height: 100%;
+}
+#navbar .container .logoContainer{
+    display: inline-block;
+    height: 100%;
+}
+#navbar .container .logoContainer img{
+    height: 100%;
+    border-radius: 50%;
+}
+#navbar .container .logoContainer img{
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.25));
+    transition: .1s;
+}
+#navbar .container .logoContainer img:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.15));
+    transition: .3s;
+}
+#navbar .container .linkContainer{
+    display: flex;
+    float: right;
+    align-items: center;
+    height: 100%;
+}
+#navbar .container .linkContainer p{
+    letter-spacing: 1px;
+    padding: 0 10px;
+}
+
+#navbar .container .linkContainer p a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.fixed .container .linkContainer p a{
+    color: #000000;
+}
+
+#home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .6;
+    overflow: hidden;
+    z-index: 0;
+}
+#home .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#home .container .logoBig{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 30px;
+}
+#home .container .title{
+    color: #ffffff;
+    font-size: 5vmin;
+    letter-spacing: 1px;
+}
+#home .container .slogan{
+    color: #ffffff;
+    text-align: center;
+    font-size: 3vmin;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+#home .container .button{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    z-index: 2;
+    text-align: center;
+}
+
+#ourTech{
+    position: relative;
+    width: 100%;
+}
+#ourTech .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 17vh 100px 0 100px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+#ourTech .container .title{
+    margin-bottom: 50px;
+    font-size: 5vmin;
+}
+#ourTech .container .text{
+    text-align: center;
+    font-size: 3vmin;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+#ourTech .container .cardContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#ourTech .container .cardContainer .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: .1s;
+}
+#ourTech .container .cardContainer .card .techText{
+    position: absolute;
+    color: #ffffff;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 5vmin;
+    transition: .1s;
+}
+#ourTech .container .cardContainer .card:hover{
+    box-shadow:0px 0px 10px rgba(140,140,140,.8);
+    transition: all .3s;
+}
+
+#ourProd{
+    position: relative;
+    width: 100%;
+}
+#ourProd .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 17vh 100px 0 100px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+}
+#ourProd .container .title{
+    margin-bottom: 50px;
+    font-size: 5vmin;
+    color: #ffffff;
+}
+#ourProd .container .text{
+    text-align: center;
+    font-size: 3vmin;
+    padding-top: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+#ourProd .container .cardContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#ourProd .container .cardContainer .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: .1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#ourProd .container .cardContainer .card .prodImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+    overflow: hidden;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+#ourProd .container .cardContainer .card .prodText{
+    color: #ffffff; 
+    font-size: 5vmin;
+    opacity: 0;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+#ourProd .container .cardContainer .card .prodPrice{
+    color: #ffffff;
+    font-size: 5vmin;
+    opacity: 0;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+#ourProd .container .cardContainer .card:hover .prodImg{
+    opacity: 0.4;
+    cursor: pointer;
+}
+#ourProd .container .cardContainer .card:hover .prodText{
+    opacity: 1;
+}
+#ourProd .container .cardContainer .card:hover .prodPrice{
+    opacity: 1;
+}
+#ourProd .container .cardContainer .card:hover{
+    box-shadow:0px 0px 10px rgba(140,140,140,.8);
+    transition: all .3s;
+}
+
+#contacts{
+    position: relative;
+    height: 20vh;
+    width: 100%;
+}
+#contacts .container{
+    height: 100%;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+#contacts .container .SSContacts{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contacts .container .SSContacts .title{
+    text-align: center;
+    font-size: 3vmin;
+}
+#contacts .container .SSContacts .contactsText{
+    text-align: center;
+    font-size: 2vmin;
+}
+#contacts .container .asicsContacts{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contacts .container .asicsContacts .title{
+    text-align: center;
+    font-size: 3vmin;
+}
+#contacts .container .asicsContacts .contactsText{
+    text-align: center;
+    font-size: 2vmin;
+}
+#footer{
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    background-color: #333333;
+}
+#footer .container{
+    height: 100%;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .container p{
+    color: #dddddd;
+    font-size: 2.5vmin;
+}
+
+
+
+@media (orientation: portrait){
+    #navbar{
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        height: 7vh;
+        width: 100%;
+        -webkit-transition: all .5s ease 0s;
+        -moz-transition: all .5s ease 0s;
+        -o-transition: all .5s ease 0s;
+        transition: all .5s ease 0s;
+    }
+    #navbar .container .logoContainer{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    #navbar .container .logoContainer img{
+        border-radius: 50%;
+        height: 70%;
+    }
+    #home {
+        position: relative;
+        height: 50vh;
+        width: 100%;
+        padding-top: 10vh;
+    }
+    #home .container .title{
+        color: #ffffff;
+        font-size: 7vmin;
+        letter-spacing: 1px;
+    }
+    #home .container .slogan{
+        color: #ffffff;
+        text-align: center;
+        font-size: 4vmin;
+        padding-top: 20px;
+        letter-spacing: 1px;
+    }
+
+    #ourTech .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10vh 100px 0 100px;
+        width: 100%;
+        height: 100%;
+    }
+    #ourTech .container .cardContainer .card{
+        position: relative;
+        width: 600px;
+        height: 600px;
+        margin: 10px;
+        background-color: #000000;
+        text-decoration: none;
+        color: #ffffff;
+        transition: .1s;
+    }
+}
